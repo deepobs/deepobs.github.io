@@ -1,0 +1,87 @@
+---
+layout: landing
+title: DeepOBS
+excerpt: A Deep Learning Optimizer Benchmark Suite
+article_header:
+  actions:
+    - text: Install
+      type: error
+      url: "#install"
+    - text: Docs
+      type: outline-theme-dark
+      url: https://deepobs.readthedocs.io/en/latest/
+    - text: Leaderboard
+      type: outline-theme-dark
+      url: "#Leaderboard"
+  height: 100vh
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
+    src: /assets/images/DeepOBS-Banner.png
+data:
+  sections:
+  - title: About DeepOBS
+    excerpt: DeepOBS is a benchmarking suite that drastically simplifies, automates and improves the evaluation of deep learning optimizers. It can evaluate the performance of new optimizers on a variety of real-world test problems and automatically compare them with realistic baselines.
+    children:
+      - title: <span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x text-primary" style="color:red"></i><i class="fa fa-rocket fa-stack-1x fa-inverse"></i></span> <br></br> Fast
+        excerpt: You only have to code your new optimizer, we take care of the benchmarking for you!
+        # actions:
+        #   - text: Learn More
+        #     url: /docs/en/additional-styles
+      - title: <span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x text-primary" style="color:red"></i><i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i></span> <br></br> Fair
+        excerpt: Automatically use competitive baselines!
+        # actions:
+        #   - text: Learn More
+        #     url: /docs/en/extensions
+      - title: <span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x text-primary" style="color:red"></i><i class="fa fa-greater-than fa-stack-1x fa-inverse"></i></span> <br></br> Comparable
+        excerpt: The same test problems for all optimizers!
+        # actions:
+        #   - text: Learn More
+        #     url: /docs/en/markdown-enhancements
+  - title: <a id="install"></a>How to Install DeepOBS
+    excerpt: You can install the latest stable release of DeepOBS using pip
+    content: <code> pip install deepobs</code> </br></br></br> You are ready to dive into the tutorials found in the <a href="https://deepobs.readthedocs.io/en/latest/">DeepOBS documentation</a>.
+  - title: DeepOBS is Open Source
+    excerpt: If you use DepeOBS in your research, please cite our <a href="https://openreview.net/forum?id=rJg6ssC5Y7">paper</a>
+    content: '<samp>@InProceedings{schneider2018deepobs,<br>Title = {Deep{OBS}: A Deep Learning Optimizer Benchmark Suite},<br>Author = {Frank Schneider and Lukas Balles and Philipp Hennig},<br>Booktitle = {International Conference on Learning Representations},<br>Year = {2019},<br>Url = {https://openreview.net/forum?id=rJg6ssC5Y7}<br>}</samp>'
+  - title: <a id="Leaderboard"></a>Leaderboard
+    excerpt: Overview over the current optimizer leaderboard on the DeepOBS test problems. Click on more details to see the full benchmarking results.
+    children:
+      - title: Quadratic Deep
+        excerpt: A 100-dimensional noisy quadratic problem with an eigenspectrum similar to the one reported for deep neural networks.
+        content: <table id='quadratic_deep' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Loss</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Momentum</td> <td>87.05</td> <td>70.5</td> </tr> <tr> <td>#2</td> <td>Adam</td> <td>87.11</td> <td>39.9</td> </tr> <tr> <td>#3</td> <td>SGD</td> <td>87.40</td> <td>51.1</td> </tr> </tbody> </table>
+      - title: MNIST - VAE
+        excerpt: A basic variational autoencoder for the MNIST data set with three convolutional and three deconvolutional layers.
+        content: <table id='mnist_vae' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Loss</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Adam</td> <td>27.83</td> <td>1.0</td> </tr> <tr> <td>#2</td> <td>SGD</td> <td>38.46</td> <td>1.0</td> </tr> <tr> <td>#3</td> <td>Momentum</td> <td>52.93</td> <td>1.0</td> </tr> </tbody> </table>
+      - title: F-MNIST - CNN
+        excerpt: A simple convolutional network for the Fashion-MNIST data set, consisting of two conv and two fully-connected layers.
+        content: <table id='fmnist_cnn' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Accuracy</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Adam</td> <td>92.34 %</td> <td>40.1</td> </tr> <tr> <td>#2</td> <td>SGD</td> <td>92.27 %</td> <td>40.6</td> </tr> <tr> <td>#3</td> <td>Momentum</td> <td>92.14 %</td> <td>59.1</td> </tr> </tbody> </table>
+      - title: CIFAR-10 - CNN
+        excerpt: A slightly larger convolutional network for the Cifar-10 data set, with three conv and three fully-connected layers.
+        content: <table id='cifar_cnn' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Accuracy</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Adam</td> <td>84.75 %</td> <td>36.0</td> </tr> <tr> <td>#2</td> <td>Momentum</td> <td>84.41 %</td> <td>40.7</td> </tr> <tr> <td>#3</td> <td>SGD</td> <td>83.71 %</td> <td>42.5</td> </tr> </tbody> </table>
+      - title: F-MNIST - VAE
+        excerpt: A basic variational autoencoder for the Fashion-MNIST data set with three convolutional and three deconvolutional layers.
+        content: <table id='fmnnist_vae' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Loss</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Adam</td> <td>23.07</td> <td>1.0</td> </tr> <tr> <td>#2</td> <td>SGD</td> <td>23.80</td> <td>1.0</td> </tr> <tr> <td>#3</td> <td>Momentum</td> <td>59.23</td> <td>1.0</td> </tr> </tbody> </table>
+      - title: CIFAR-100 - All CNN C
+        excerpt: Variant C of the All Convolutional Network from <a href="https://arxiv.org/abs/1412.6806">Striving for Simplicity</a> for the CIFAR-100 data set consisting solely of convolutional layers.
+        content: <table id='cifar_allcnnc' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Accuracy</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Momentum</td> <td>60.33 %</td> <td>72.8</td> </tr> <tr> <td>#2</td> <td>SGD</td> <td>57.06 %</td> <td>128.7</td> </tr> <tr> <td>#3</td> <td>Adam</td> <td>56.15 %</td> <td>152.6</td> </tr> </tbody> </table>
+      - title: SVHN - Wide ResNet 16-4
+        excerpt: The <a href="https://arxiv.org/abs/1605.07146">Wide ResNet 16-4</a> for the Street View House Numbers data set using the variant with 16 conv layers and a widening factor of 4.
+        content: <table id='svhn_wrn' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Accuracy</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>Momentum</td> <td>95.53 %</td> <td>10.8</td> </tr> <tr> <td>#2</td> <td>SGD</td> <td>95.37 %</td> <td>28.3</td> </tr> <tr> <td>#3</td> <td>Adam</td> <td>95.25 %</td> <td>12.1</td> </tr> </tbody> </table>
+      - title: Tolstoi - Char RNN
+        excerpt: A recurrent neural network for character-level language modeling on the novel <i>War and Peace</i> by <i>Leo Tolstoy</i> using two LSTM layers.
+        content: <table id='tolstoi_char_rnn' class="center"><thead> <tr> <th>Rank</th> <th>Optimizer</th> <th>Test Accuracy</th> <th>Speed</th> </tr> </thead> <tbody> <tr> <td>#1</td> <td>SGD</td> <td>62.07 %</td> <td>47.7</td> </tr> <tr> <td>#2</td> <td>Momentum</td> <td>61.30 %</td> <td>88.0</td> </tr> <tr> <td>#3</td> <td>Adam</td> <td>61.23 %</td> <td>62.8</td> </tr> </tbody> </table>
+---
+
+<script>
+  new Tablesort(document.getElementById('quadratic_deep'));
+  new Tablesort(document.getElementById('mnist_vae'));
+  new Tablesort(document.getElementById('fmnist_cnn'));
+  new Tablesort(document.getElementById('cifar_cnn'));
+  new Tablesort(document.getElementById('fmnnist_vae'));
+  new Tablesort(document.getElementById('cifar_allcnnc'));
+  new Tablesort(document.getElementById('svhn_wrn'));
+  new Tablesort(document.getElementById('tolstoi_char_rnn'));
+</script>
