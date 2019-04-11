@@ -10,11 +10,16 @@ h6 {
 
 code {
   font-size: x-large;
+  display: block;
+  white-space: pre-wrap;
   font-weight: 100;
   border: 1px solid silver;
   background: linear-gradient(rgba(#afb3b7, .2), rgba(#afb3b7, .1));
-  padding: 10px 40px;
+  padding: 10px 10px;
   border-radius: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
   min-width: 350px;
 }
 
