@@ -480,3 +480,52 @@ function toggleDataSeries2(e) {
 <div id="P2_Train_Loss" style="width: 45%; height: 300px;display: inline-block;"></div>
 <div id="P2_Test_Loss" style="width: 45%; height: 300px;display: inline-block;"></div>
 <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<br><br>
+<h2>Overview Table</h2>
+<br>
+<table id='P2_table' class="center"><thead>
+  <tr>
+    <th data-sort-default>Rank</th>
+    <th>Optimizer</th>
+    <th>Final Test Loss</th>
+    <th>Best Test Loss</th>
+    <th>Final Train Loss</th>
+    <th>Best Train Loss</th>
+    <th>Speed</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>1</td>
+    <td>Adam</td>
+    <td>27.83</td>
+    <td>27.83</td>
+    <td>27.09</td>
+    <td>27.09</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>SGD</td>
+    <td>38.46</td>
+    <td>38.36</td>
+    <td>38.52</td>
+    <td>38.42</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Momentum</td>
+    <td>52.93</td>
+    <td>52.93</td>
+    <td>53.11</td>
+    <td>53.11</td>
+    <td>1.0</td>
+  </tr>
+    </tbody>
+  </table>
+
+<script>
+  new Tablesort(document.getElementById('P2_table'));
+</script>

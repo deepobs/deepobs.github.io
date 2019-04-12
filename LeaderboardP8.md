@@ -2772,10 +2772,10 @@ chart4.render();
   <tr>
     <td>1</td>
     <td>SGD</td>
-    <td>62.11%</td>
     <td>62.07%</td>
-    <td>64.06%</td>
+    <td>62.11%</td>
     <td>64.00%</td>
+    <td>64.06%</td>
     <td>1.23</td>
     <td>1.23</td>
     <td>1.15</td>
@@ -2785,10 +2785,10 @@ chart4.render();
   <tr>
     <td>2</td>
     <td>Momentum</td>
-    <td>61.31%</td>
     <td>61.30%</td>
-    <td>63.04%</td>
+    <td>61.31%</td>
     <td>63.02%</td>
+    <td>63.04%</td>
     <td>1.26</td>
     <td>1.26</td>
     <td>1.19</td>
@@ -2798,10 +2798,10 @@ chart4.render();
   <tr>
     <td>3</td>
     <td>Adam</td>
-    <td>61.24%</td>
     <td>61.23%</td>
-    <td>62.93%</td>
+    <td>61.24%</td>
     <td>62.92%</td>
+    <td>62.93%</td>
     <td>1.27</td>
     <td>1.27</td>
     <td>1.20</td>

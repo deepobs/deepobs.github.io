@@ -2269,3 +2269,68 @@ chart4.render();
 <div id="P7_Train_Acc" style="width: 45%; height: 300px;display: inline-block;"></div>
 <div id="P7_Test_Acc" style="width: 45%; height: 300px;display: inline-block;"></div>
 <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<br><br>
+<h2>Overview Table</h2>
+<br>
+<table id='P7_table' class="center"><thead>
+  <tr>
+    <th data-sort-default>Rank</th>
+    <th>Optimizer</th>
+    <th>Final Test Accuracy</th>
+    <th>Best Test Accuracy</th>
+    <th>Final Train Accuracy</th>
+    <th>Best Train Accuracy</th>
+    <th>Final Test Loss</th>
+    <th>Best Test Loss</th>
+    <th>Final Train Loss</th>
+    <th>Best Train Loss</th>
+    <th>Speed</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>Momentum</td>
+    <td>95.53%</td>
+    <td>95.53%</td>
+    <td>99.68%</td>
+    <td>99.73%</td>
+    <td>0.27</td>
+    <td>0.27</td>
+    <td>0.07</td>
+    <td>0.07</td>
+    <td>10.8</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>SGD</td>
+    <td>95.37%</td>
+    <td>95.39%</td>
+    <td>99.74%</td>
+    <td>99.81%</td>
+    <td>0.32</td>
+    <td>0.32</td>
+    <td>0.11</td>
+    <td>0.11</td>
+    <td>28.3</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Adam</td>
+    <td>95.25%</td>
+    <td>95.34%</td>
+    <td>99.43%</td>
+    <td>99.43%</td>
+    <td>0.30</td>
+    <td>0.30</td>
+    <td>0.10</td>
+    <td>0.10</td>
+    <td>12.1</td>
+  </tr>
+  </tbody>
+</table>
+
+<script>
+  new Tablesort(document.getElementById('P7_table'));
+</script>
