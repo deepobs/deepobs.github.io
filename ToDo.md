@@ -10,7 +10,7 @@
 - [ ] Write additional section about each test problem (setup, runtime, data set, etc.)
 - [ ] Write some more details to each problem how it was gathered (mean of 10 runs, Hyperparameter optimization, etc.)
 - [ ] Add a note that one can zoom into the Plots!
-- [ ] Add Table with Hyperparameters, GitHub link, website link for each optimizer on each leaderboard-detail page? Like https://paperswithcode.com/sota/image-classification-on-cifar-10
+- [ ] Add Table with Hyperparameters, GitHub link, website link for each optimizer on each leaderboard-detail page? Like https://paperswithcode.com/sota/image-classification-on-cifar-10. Look into Datatables.net
 - [ ] "Learn More" or similar button below the Fast/Fair/Comparable sections to go to e.g. Github page, Github page baselines, leaderboard?
 - [ ] Add standard deviation to each plot in leaderboard. Make it hide/unhide together with the mean
 - [ ] Images of data sets below each problem.
@@ -29,6 +29,7 @@
 
 ## Plots
 
+- [ ] Replace Free Trial version with Student license
 - [ ] Round the numbers shown in the tooltips.
 - [ ] No markers for the std.dev when hovering over them.
 - [ ] Pick a default zoom for the plots. Can you still zoom out then?
